@@ -1,0 +1,36 @@
+<h1>Form</h1>
+
+<form name="form" novalidate>
+    <div class="formEntry required">
+        <label>First name : </label>
+        <input type="text" name="firstname"/>
+        <span class="error required">Champs manquant</span>
+    </div>
+    <div class="formEntry required">
+        <label>Last name : </label>
+        <input type="text" name="lastname"/>
+        <span class="error required">Champs manquant</span>
+    </div>
+    <div class="formEntry required email">
+        <label>Email : </label>
+        <input type="email" name="email"/>
+        <span class="error required">Champs manquant</span>
+        <span class="error email">Email non valide</span>
+    </div>
+    <div class="formEntry">
+        <label>Phone : </label>
+        <input type="text" name="phone"/>
+    </div>
+
+    <div>
+        <button class="validateFormBtn">Validate form</button>
+    </div>
+
+    <div class="formResult formValid">
+        Form valid
+    </div>
+    <div class="formResult formInvalid">
+        Form invalid
+    </div>
+
+</form>

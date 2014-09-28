@@ -1,0 +1,18 @@
+<div class="hero-unit">
+    <p>You now have</p>
+    <ul>
+        <li ng-repeat="thing in awesomeThings">
+            <span>{{thing.name}}</span>
+            <button ng-click="remove(thing)">Remove</button>
+        </li>
+    </ul>
+</div>
+
+<section>
+    <input type="text" ng-model="newValue"/>
+    <button ng-click="add(newValue)">Add</button>
+</section>
+
+<div>
+    <a href="/#/form">Go to form</a>
+</div>
